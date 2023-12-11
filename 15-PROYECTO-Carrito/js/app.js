@@ -1,6 +1,6 @@
 const carrito = document.querySelector("#carrito");
 const contenedorCarrito = document.querySelector("#lista-carrito tbody");
-// const vaciarCarritoBtn = document.querySelector('#vaciar-carrito');
+const vaciarCarritoBtn = document.querySelector('#vaciar-carrito');
 const listaCursos = document.querySelector("#lista-cursos");
 let articulosCarrito = [];
 
@@ -14,6 +14,13 @@ function cargarEventListeners() {
   carrito.addEventListener("click", eliminarCurso);
 }
 
+
+//vaciar carrito
+vaciarCarritoBtn.addEventListener('click', () => {
+  articulosCarrito = [];
+  limpiarHTML();
+})
+
 function agregarCurso(e) {
   e.preventDefault();
 
@@ -24,7 +31,6 @@ function agregarCurso(e) {
 }
 
 function eliminarCurso(e) {
-  console.log("abel caralps");
   if (e.target.classList.contains("borrar-curso")) {
     const cursoId = e.target.getAttribute("data-id");
 
@@ -37,7 +43,6 @@ function eliminarCurso(e) {
 
 //lee contenido y extrae info del curso
 function leerDatosCurso(curso) {
-  console.log(curso);
 
   //creacion del objeto
   const infoCurso = {
@@ -50,7 +55,7 @@ function leerDatosCurso(curso) {
 
   //revisa si un elemento ya existe en carrito
   const existe = articulosCarrito.some((curso) => curso.id === infoCurso.id);
-  console.log(existe);
+
   if (existe) {
     const cursos = articulosCarrito.map((curso) => {
       if (curso.id === infoCurso.id) {
