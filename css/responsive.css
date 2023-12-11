@@ -1,0 +1,445 @@
+/*REVISAR AQUÃ Y TRAER DE STYLE POR SI NO RECONOCE LA PROPIEDAD VAR*/			
+
+/*=============================================
+MIN WIDTH - 1281
+=============================================*/
+
+@media screen and (min-width:1281px) { 
+
+	body{
+		background: linear-gradient(to bottom, var(--naranja-claro) 1900px, var(--marron-oscuro) 10%);     
+	}
+
+	aside.a-header{		
+		padding-left: 3%;			
+	}
+
+	.header{		
+		padding-left: 3%;
+	}
+	.header:last-child{
+		padding-left: 0;
+		padding-right: 3%;
+	}	
+	nav{		
+		padding-right: 3%;	
+	}
+	section#inicio {
+		justify-content: space-between;
+	}	
+	.container{
+		margin-right: 4.20%;
+	}	
+	
+}
+
+/*=============================================
+MAX WIDTH - 1024
+=============================================*/
+
+@media screen and (max-width: 1024px){
+	
+	aside.a-header{						
+		flex: 1 0 calc(5% - 1rem);
+	}
+	.cir-1 {    
+    	margin-left: 1rem;
+	}
+	nav ul{
+		margin-right: 1rem;
+	}
+
+	section#inicio {
+		min-height: var(--altura-min);
+		display: flex;		
+		width: 100%;				
+		justify-content: center;
+		align-items: flex-start;		
+		min-height: 350px;
+		margin-top: 0;		
+		padding-top: 1.5rem;
+	}
+
+	header h1{			
+		line-height: 2rem;		
+		font-size: 1.625rem;		
+	}
+
+	h1 span{		
+		width: 100%;
+		display: flex;
+ 		margin-bottom: -1.5rem;    	    	    	
+    	margin-top: 2.5rem;    	
+		font-size: 2.688rem;		
+		font-weight: 700;	
+	}
+
+	.header{		
+		flex: 1 0 calc(30% -1rem);			
+	}	
+	
+	section#inicio img{		
+		min-width: 350px;						
+		min-height: auto;		
+	}
+
+	#inicio p{
+		width: 43%;
+		padding: 1rem 0;		
+		margin-bottom: 1rem;
+	}
+
+	#sobre-mi{	
+		width: 70%;
+		margin-left: 30%;		
+		padding: 0 4rem 1rem 4rem;		
+		box-shadow: -50px 0 0 0px var(--celeste-claro), -80px 0 0 0px var(--naranja-oscuro);		
+		background-position: 3.5em 65%, 2.5rem 2rem, top right;
+		background-size: 85% 50%, 35% 90%, 3.438rem 3.438rem;
+	}
+
+
+	#habilidades{
+		background-position: top right, 95% 100%;		
+		background-size: 55px 55px, 45% auto;
+	}
+	article.contenido-habilidades{
+		width: 100%;  
+	}
+
+	.curriculum{
+		width: 11rem;				
+	}
+
+	#portafolio h1, #portafolio h2{
+		width: 68%;
+	}
+
+	.slide-portafolio ul li{
+		flex-direction: column;
+	}
+	.slide-portafolio ul li p {
+	    flex-direction: column;
+	    width: 100%;
+	    display: flex;
+	    justify-content: center;
+	    align-items: flex-start;
+	    margin: 0
+	}
+	.slide-portafolio img{
+		max-width: 100%;
+	}
+
+	.container{
+		flex-basis: 60%;
+	}
+
+	#contacto i{		
+		font-size: 13rem;
+		margin-left: -3%;		
+	}
+	
+	#contacto h1{
+		width: 50%;
+	}
+
+	#creditos{
+		/*background-position: top right, 95% 100%;		*/
+		background-position: top right, center bottom;
+		background-size: 55px 55px, 45% auto;
+	}
+	article.contenido-creditos{
+		width: 100%;  
+	}
+
+}
+
+/*=============================================
+MAX WIDTH - 768
+=============================================*/
+
+@media screen and (max-width: 768px){
+
+	body{
+		background: linear-gradient(to bottom, var(--naranja-claro) 2200px, var(--marron-oscuro) 10%); 
+	}
+	
+	aside.a-header{
+		background: #0d49ee;
+		flex-basis: 100%;
+		justify-content: center;
+		align-items: center;
+		height: 2.25rem;
+		min-height: 2.25rem;
+		order: 0; 
+		min-height: 1.75rem;
+		height: 1.75rem;
+	}
+	
+	nav ul{				
+		flex-basis: 100%;		
+		display: flex;		
+		order: -1;		
+		justify-content: center;		
+	}
+
+	nav ul li a{				
+		margin: 0.25rem;
+		padding: 0.275rem;		
+	}
+
+	.cir-1{		
+		margin-left: 0.5rem;		
+	}
+
+	section#inicio {		
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		padding: 1rem 2rem 0;
+	}
+
+	section#inicio > article.monitor{		
+		justify-content: center;		
+		width: 80%;
+		align-self: center;
+		margin-top: 1rem;		
+		padding-top: 0.4rem;
+		min-height: auto;
+	}
+
+	section#inicio img {
+		min-width: 100%;
+	}
+
+	.header{		
+		max-width: 100%;
+		width: 95%;
+		margin-bottom: 1.2rem;
+		min-height: auto;
+	}
+
+	#sobre-mi{
+		width: 88%;
+		margin-left: 12%;		
+		padding: 0 2rem 1rem 2rem;
+		box-shadow:-30px 0 0 0px var(--celeste-claro), -60px 0 0 0px var(--naranja-oscuro);	
+		background-position: 1.5em 60%, 1.5rem 2rem, top right;
+		background-size: 92% 45%, 39% 90%, 3.438rem 3.438rem;
+	}
+
+	#sobre-mi h1{		
+		width: 40%;		
+	}
+	
+	#portafolio{
+		width: 93%;
+		padding: 1rem 1rem 2.5rem
+	}
+
+	#portafolio h1, #portafolio h2{
+		width: 100%;
+	}
+
+	.text-port{		
+		font-size: 70%;		
+		width: 100%;
+	}
+
+	#contacto{
+		flex-direction: column;		
+		align-items: center;		
+		justify-content: space-between;			
+		padding: 1.75rem 1rem 3.5rem 1rem;
+	}
+
+	#contacto i{
+		margin: 0;
+		margin-bottom: 1.3rem;
+	}
+
+	.container{				
+		margin:0;		
+		width: 90%;		
+		margin-left: 4.5%;
+		box-shadow: -20px 0 0 0px #71a5d6, -30px 0 0 0px #F5F5EB;
+	}
+
+}
+
+/*=============================================
+MAX WIDTH - 480
+=============================================*/
+
+@media screen and (max-width: 480px){
+	aside.a-header{		
+		background: #71a5d6;
+		flex-basis: 1%;
+		order: -1;
+		min-height: 7rem;			
+		flex-basis: 100%;
+		min-height: 2rem;
+		align-items: center;
+		justify-content: flex-end;
+		margin-right: 3rem;
+		padding-right: 0.5rem;		
+		background: #71a5d6;
+	}
+	.idioma{
+		margin-right: 1.7rem;
+	}
+	nav ul{
+		display: flex;
+		order: -1;
+		flex-basis: 100%;
+		flex-direction: column;			
+		justify-content: center;
+		background: none;
+		min-height: 7rem;	
+	}
+	nav ul li{
+		text-align: left;		
+		align-content: flex-start;
+		align-self: flex-end;
+		margin-right: 1rem;			
+		padding-top: 0.175rem;
+		padding-bottom: 0.175rem;
+	}
+	nav ul li a{		
+		transition: 0.3s;		
+		padding-top: 0;
+		padding-bottom: 0;	
+		margin: 0.5rem;
+		padding: 0.25rem;
+	}
+	nav ul li a:hover{		
+		border-top: none;				
+		padding-top: 0;
+		padding-bottom: 0;
+		padding-left: 1.188rem;
+		margin: 0.5rem;/*Con este los giro hacia la derecha*/
+		padding-right: 1rem; /*Con este le doy espacio a la derecha*/	
+		border-left: 3px solid white;					
+		opacity: 1;
+		background: #9FD4CA;
+	}
+
+	section#inicio {		
+		padding: 1rem 1rem 0;		
+	}
+
+	section#inicio > article.monitor{
+		justify-content: center;		
+	}
+
+	.header{
+		width: 100%;
+		max-width: 100%;		
+		margin-bottom: 1.2rem;		
+	}
+
+	#sobre-mi h1{
+		width: 60%;		
+	}
+	
+	#sobre-mi h2 {
+		width: 90%;
+	}
+
+	#habilidades{
+		background-position: top right, 95% 95%;
+	}
+
+	#habilidades h2, h3, h4, h5 {
+	    display: flex;
+	}
+
+	#habilidades i{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.container .formBx form .inputBox input[type="submit"]{
+		width: 100%;
+		min-width: 100%;
+	}
+	.container .formBx form .inputBox textarea {
+		margin-top: 1rem;
+	}
+	footer{
+		flex-direction: column;
+        justify-content: center;
+    	align-items: center;
+	}
+	.datos-contacto{
+		margin-bottom: 0.25rem;		
+	}
+	aside.datos-contacto li{
+		padding: 0.625rem 0.85rem;
+	}
+	
+	footer p.creditos{
+		text-align: center;
+	}
+
+	#creditos{
+		background-position: top right, 95% 95%;
+		background-position: top right, center 90%;
+	}
+
+	#creditos h2, h3, h4, h5 {
+	    display: flex;
+	}
+
+	#creditos i{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	#creditos i.external{
+		font-size: 0.75rem;
+		margin: 0;
+		padding: 0;
+		width: auto;		
+		display: inline-block;
+	}	
+	
+}
+
+/*=============================================
+MAX WIDTH - 320
+=============================================*/
+
+@media screen and (max-width: 320px){	
+
+	.header{
+		display: contents; 
+
+	}
+
+	header h1{
+		margin: 0;
+	}
+
+	h1 span{		
+    	font-size: 2.588rem;
+	}
+
+	#inicio p {
+	    width: 53%;
+	}
+
+	#sobre-mi h1 {
+	    width: 70%
+	}
+
+	#sobre-mi h2 {
+ 	   width: 100%;
+	}
+
+	#sobre-mi .sobre-mi{
+		font-size: 2rem;
+	}
+
+}
