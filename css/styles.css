@@ -472,71 +472,50 @@ p.curriculum:hover a{
 PORTAFOLIO
 =============================================*/
 
-#portafolio{
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
+#portfolio{
 	width: 90%;	
 	padding: 2rem 4rem 7rem;	
     margin: 1rem auto 1rem;   
-	/*Fondo verde agua normal*/
-
-  	background-repeat: no-repeat;  	
-	background-position: top right;		
 	background-color: #9FD4CA;	
 	border-bottom-right-radius: 20px;
 	padding-bottom: 6rem;
+    text-align: center;
 }
 
-#portafolio h1, #portafolio h2{	
-	line-height: 1.7;
-	font-weight: 900;
-	text-transform: none;
-	background: url(../img/fondo-h-portafolio.png);
-  	background-repeat: no-repeat;  	
-	background-position: left bottom; 	
-	margin: 2.25rem 0 1.85rem; 		
-	width: 36%;
-	color: #354355; /*Azul temporal opciÃ³n temporal*/
+.proyectos-lista {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
-#portafolio h2{	
-	margin: 3rem 0 1.85rem;	
-	width: 63%;
+.proyecto {
+    margin: 10px;
+    text-align: center;
 }
 
-
-.titulo-port{
-	font-size: 1.5rem;
-	font-weight: 400;
+.proyecto a {
+    text-decoration: none;
+    color: inherit;
 }
 
-
-
-ul.galeria-img-port{		
-  	flex: 1 0 calc(33% - 1rem);  	
-	display: flex;
-	flex-direction: column;		
-	align-items: center;
+.proyecto-imagen {
+    height: 150px; /* Establece el tamaño deseado para las imágenes */
+    width: 100%; /* Ajusta el ancho al 100% para que sea responsivo */
+    object-fit: cover; /* Ajusta el tamaño manteniendo la proporción de la imagen */
 }
 
-ul.galeria-img-port li{			
-	position: relative;	
-	margin-bottom: -0.25rem;	
+.titulo-port {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 8px 0;
 }
 
-ul.galeria-img-port li:last-child{	
-	margin-bottom: 0;
-	margin-bottom: -0.25rem
-}	
-
-ul.galeria-img-port li:hover .overlayBottom {
-    height: 100%;
-    opacity: 1;   
-    cursor: pointer;
-  	background: #22303A; 
+.descripcion-proyecto {
+    font-size: 14px;
+    color: #555;
 }
-
 
 .overlay-img {
     position: absolute;
@@ -567,9 +546,6 @@ ul.galeria-img-port li:hover .overlayBottom {
     
 }
 
-
-
-/* The Modal (background) */
 .modal {
   display: none; /* Hidden by default */ 
   z-index: 1; /* Sit on top */ 
@@ -822,9 +798,6 @@ FORMULARIO DE CONTACTO
 	margin-right: 2rem;	
 	display: flex;
 	flex-basis: 100%;
-
-	/*animation: estiloError 7s linear forwards;
-    -webkit-animation: estiloError 7s linear forwards;	*/
 }
 .avisos-form{
 	margin-top: 1rem;
@@ -941,17 +914,6 @@ article.datos-contacto ul li{
 	color: #9FD4CA;		
 }
 
-/*span.telefono-movil{	
-	color: #9FD4CA !important;		
-	text-decoration: none;
-	border: 1px solid orange;
-}*/
-
-/*article.datos-contacto ul:first-child{
-	border: 11px solid #9FD4CA;
-	color: #9FD4CA;	
-}
-*/
 article.datos-contacto ul li i{	
 	padding: 0.25rem 0.1rem;
 	font-size: 1.2rem;
@@ -982,27 +944,9 @@ aside.datos-contacto ul {
     justify-content: center;         
     flex-basis: 70%;	
 }
-
-/*CAMBIO REDES SOCIALES*/
-/*
-aside.datos-contacto li{
-	padding: 0.625rem;	
-	font-size: 1.625rem;	
-	color: #9FD4CA;			
-}*/
-
 aside.datos-contacto ul li i{	
 	transition: all 400ms ease;
 }
-
-/*CAMBIO REDES SOCIALES*/
-/*
-aside.datos-contacto li:hover{	
-	color: #F8AF75;
-	cursor: pointer;		
-}*/
-
-/*AÃ‘ADIDO CAMBIO REDES SOCIALES*/
 
 aside.datos-contacto li a{
 	padding: 0.625rem;	
@@ -1056,132 +1000,4 @@ section#datos-personales{
 p.creditos.copyright{
 	font-size: 0.75rem;
 	opacity: 0.4;
-}
-
-/*=============================================
-CRÃ‰DITOS DE LA WEB
-=============================================*/
-
-.header-creditos{
-	min-height: auto;	
-}
-
-#creditos{
-	display: flex;	
-	min-height: var(--altura-min);
-	min-height: 100vh;		
-	background: url(../img/fondo-esquina-creditos.png), url(../img/fondo-creditos.png);
-  	background-repeat: no-repeat;  		
-	background-color: #71a5d6;	
-	background-position: top right, 95% top;	
-    flex-grow: 1;       
-    flex-direction: column;   
-    padding: 2rem 4rem 1rem;
-    padding-left: 5%;    
-    font-family: var(--open-sans);    
-}
-article.contenido-creditos{
-	width: 60%;		
-}
-
-#creditos i{	
-	font-size: 1.375rem;				
-	border-radius: 6px;	
-	margin-right: 1rem;
-	padding: 0.25rem;	
-	color: white;
-}
-
-#creditos i.external{
-	font-size: 0.75rem;
-	margin: 0;
-	padding: 0;
-	background: none;
-}
-
-#creditos h1{
-	font-family: var(--montserrat);		
-	line-height: 2.5rem;	
-	color: #354359;
-	font-size: 1.5rem;
-	background: url(../img/fondo-h1-creditos.png);
-  	background-repeat: no-repeat;  
-	background-position: left bottom; 	
-	margin-bottom: 2rem;	
-}
-
-#creditos h2, h3, h4, h5{	
-	margin-top: 0;
-	margin-bottom: 0.25em;
-	font-weight: 500;
-	font-size: 1.2em;		
-	color: white;
-}
-
-#creditos ul{
-	margin: 1rem 0 2rem;	
-}
-
-#creditos ul li{	
-	margin-left: 3rem;
-	font-weight: 300;
-	font-size: 1rem;		
-	color: #354359;
-	font-family: 'Lato', sans-serif;	
-	line-height: 1.5;
-	text-rendering: optimizeLegibility;		
-}
-
-#creditos ul li span{	
-	color: #354359;
-}
-
-
-/*=============================================
-ERROR 404
-=============================================*/
-
-.header-404{
-	min-height: auto;	
-}
-
-#error404{
-	display: flex;	
-	min-height: var(--altura-min);
-	min-height: 100vh;		
-	background: url(../img/fondo-esquina-creditos.png);
-  	background-repeat: no-repeat;  		
-	background-color: #F8AF75;	
-	background-position: top right;	
-    flex-grow: 1;       
-    flex-direction: column;   
-    padding: 2rem 4rem 1rem;
-    padding-left: 5%;    
-    font-family: var(--open-sans);    
-}
-
-#error404 h1{
-	font-family: var(--montserrat);		
-	line-height: 2.5rem;		
-	margin-bottom: 2rem;	
-}
-
-#error404 p{		
-	font-weight: 300;
-	font-size: 1rem;			
-	font-family: 'Lato', sans-serif;	
-	line-height: 1.5;
-	text-rendering: optimizeLegibility;
-	margin-bottom: 1.2rem;			
-}
-
-#error404 p a{
-	font-size: 0.875rem;	
-}
-
-#error404 p a:hover{
-	color: #354359;	
-}
-.otros{
-	display: none;
 }

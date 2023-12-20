@@ -5,3 +5,8 @@ console.log(nombre)
 const productoJson = localStorage.getItem('producto')
 const productObj = JSON.parse(productoJson)
 console.log(productObj)
+
+
+const meses = localStorage.getItem('meses')
+const mesesArray = JSON.parse(meses)
+console.log(mesesArray)
