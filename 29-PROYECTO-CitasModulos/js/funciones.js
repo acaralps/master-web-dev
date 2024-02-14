@@ -1,7 +1,10 @@
-let editando = false;
+import Citas from './classes/Citas.js';
+import UI from './classes/UI.js';
+import { mascotaInput, propietarioInput, telefonoInput, fechaInput, horaInput, sintomasInput, formulario } from './selectores.js';
 
 const administrarCitas = new Citas();
 const ui = new UI(administrarCitas);
+let editando = false;
 
 const citaObj = {
     mascota: '',
