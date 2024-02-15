@@ -1,6 +1,6 @@
 
 import { eliminarCita, cargarEdicion } from '../funciones.js';
-import { contenedorCitas } from '../selectores.js'
+import { contenedorCitas, heading } from '../selectores.js'
     class UI {
 
     constructor({citas}) {
